@@ -19,3 +19,4 @@ document.body.appendChild(h1) //to access the body element
 //Framework : -NextJS
  //             -Angular
 // in built eg: flat house (cant change more in this)
+//
