@@ -9,3 +9,13 @@
 var h1 = document.createElement(h1);
 h1.innerHTML = "hello form js"
 document.body.appendChild(h1) //to access the body element
+
+
+ // library: -GSAP for animation
+//           - Lenis for smooth scrolling
+//            -React.JS website UI bna k lye
+// eg : can make more changes (every feature has different library)
+
+//Framework : -NextJS
+ //             -Angular
+// in built eg: flat house (cant change more in this)
