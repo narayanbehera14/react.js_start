@@ -20,3 +20,28 @@ document.body.appendChild(h1) //to access the body element
  //             -Angular
 // in built eg: flat house (cant change more in this)
 //
+
+//import & export (multiplt file to access)
+
+// type of export (1.named , 2.default)
+
+const a = 10;
+ export default a ; //in default a can be written anything in import
+                 
+import abcd from '/.app.js'//import will access those element writeen in default
+console.log("hello"); 
+
+import {age} from './app.js'//{} is to specific declare value
+console.log(age);
+
+
+
+//-------------------------------------------//
+
+//Real DOM (reload required for full page)
+
+//Virtual DOM (it will compare to real dom then specific part will change )
+
+//JSX - Javascript XML (HTML + JavaScript combination HTML CAN WRITTEN IN javascript)
+
+var h1 = <h1></h1>
