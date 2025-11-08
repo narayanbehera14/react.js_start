@@ -1,0 +1,39 @@
+.parent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  height: 200px;
+  width: 250px;
+  border: 1px solid white;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  color: rgb(28, 9, 24);
+  background-color: #aec30a;
+}
+.card image{
+  height: 100px;
+  width: 100px;
+  object-fit: cover;
+  border-radius: 50px;
+}
+
+body {
+  background-color: rgb(15, 15, 104);
+  color: white;
+  margin: 0;
+}
+.card p {
+  margin: 20px;
+}
+.card button{
+  padding: 10px 20px;
+  background-color: rgb(219, 206, 209);
+  color: rgb(6, 16, 10);
+  border: #aec30a;
+  border-radius: 5px;
+}
