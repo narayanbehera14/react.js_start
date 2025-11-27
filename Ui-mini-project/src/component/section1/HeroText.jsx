@@ -1,4 +1,5 @@
 import React from 'react'
+import Arrow from './Arrow'
 
 const HeroText = () => {
   return (
@@ -7,6 +8,7 @@ const HeroText = () => {
        <p className='text-lg font-medium text-gray-600'>
         prakhar up se hai roomno 609.c BBA first year . IIT chod k 
        </p>
+       <Arrow/>
        </div>
   )
 }
