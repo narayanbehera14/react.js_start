@@ -10,6 +10,10 @@ const App = () => {
   function salarydecrease () {
     decreasesalary(increasesalary-1000)
   }
+
+  function jump5 () {
+    decreasesalary (increasesalary + 5 )
+  }
   return (
     <div>
       <h1>Narayan salary</h1>
@@ -17,7 +21,7 @@ const App = () => {
       <h2>{increasesalary}</h2>
 
       <button onClick={Salaryincrease}>Increase</button>
-
+      <button onClick={jump5}>Increase By 5 </button>
       <button onClick={salarydecrease}>Decrease</button>
       
     </div>
