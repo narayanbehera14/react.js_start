@@ -14,6 +14,11 @@ const App = () => {
         console.log(val)
       }
 
+   const pageScrolling = (elem)=> {
+    console.log('page scrolling...!!!')
+
+   }
+
   return (
     <div>
       <h1>Hello Narayan</h1>
@@ -55,8 +60,25 @@ const App = () => {
         console.log("liju is ytuber");
       }}>help me.!</button>
 
-    
+
+      <div 
+      onMouseMove={(elem)=> {
+        console.log(elem.clientX);
+
+      }} className="box">
+
+      </div>
+      {/* <div onWheel={pageScrolling}>   differ way to call functon */}
+      
+      <div onWheel={(elem)=>{
+        pageScrolling(elem)
+      }} >
+      <div className="page1"></div>
+      <div className="page2"></div>
+      <div className="page3"></div>
     </div>
+    
+       </div>
   )
 }
 

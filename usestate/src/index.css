@@ -63,34 +63,6 @@ button:focus-visible {
     color: #747bff;
   }
   button {
-    margin: 10px;
     background-color: #f9f9f9;
   }
-}
-
-input{
-  margin: 10px;
-  padding: 10px 20px;
-}
-
-.box{
-  height: 200px;
-  width: 200px;
-  background-color: aqua;
-}
-
-.page1{
-  height: 100vh;
-  width: 100%;
-  background-color: crimson;
-}
-.page2{
-  height: 100vh;
-  width: 100%;
-  background-color: rgb(215, 67, 156);
-}
-.page3{
-  height: 100vh;
-  width: 100%;
-  background-color: rgb(20, 220, 127);
 }
