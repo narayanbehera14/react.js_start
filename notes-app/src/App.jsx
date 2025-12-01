@@ -1,9 +1,11 @@
 import React, { useState } from 'react'
+// import './App.css'
 
 const App = () => {
   const [title, setTitle] = useState('')
   const [details, setDetails] = useState('')
   const [task, setTask] = useState([])
+  // const [deleteElement, setDeleteElement] = useState("")
 
   const submitHandler = (e) => {
     e.preventDefault()
@@ -12,6 +14,18 @@ const App = () => {
     setTask(copyTask)
     setTitle('')
     setDetails('')
+  }
+
+  console.log("task of arr: ", task)
+
+  const deleteEle = (index) => {
+  const deletedItem = task[index];
+
+  alert(`Deleted data => ${JSON.stringify(deletedItem)}`);
+  console.log(`Deleted data => ${JSON.stringify(deletedItem)}`)
+
+    const updated = task.filter((_, i) => i !== index)
+    setTask(updated)
   }
 
   return (
@@ -62,6 +76,8 @@ const App = () => {
               <p className='mt-3 text-gray-900 font-medium leading-tight'>
                 {elem.details}
               </p>
+
+              <button className='text-black bg-amber-400 mt-27 ' onClick={() => deleteEle(idx)}>Delete</button>
             </div>
           ))}
 
