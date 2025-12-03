@@ -16,7 +16,7 @@ const App = () => {
   }
   return (
     <div>
-      <h1>Narayan salary</h1>
+      <h1>Counter:</h1>
 
       <h2>{increasesalary}</h2>
 
