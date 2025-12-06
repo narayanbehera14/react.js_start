@@ -1,19 +1,34 @@
-import React from 'react'
+import React, { useState } from 'react'
+import axios from 'axios'
 
 const App = () => {
-   const getData = async () => {
+  const [data,setdata] = useState([])
 
-    const response = await fetch('https://jsonplaceholder.typicode.com/todos/1')
+   const getData = async () => {
+     const response = await fetch('https://jsonplaceholder.typicode.com/users')
     
     const data = await response.json()
-    console.log(data);
+    console.log(data)
+   
+    }
+   const giveData = async () => {
+     const response = await axios.get('https://jsonplaceholder.typicode.com/users')
+    
+     // console.log('Nachoooo')
+     setdata(response.data);
+    }
 
-  }
-  return (
+  
+  return ( 
     <div>
-
-      <button onClick={getData}>Get Data</button>
       
+      <button onClick={giveData}>Give Data</button>
+
+      {data.map((elem,idx) => {
+        return <h3 key={idx}>hello {elem.name}</h3>
+      } )}
+      <button onClick={getData}>Get Data</button>
+
     </div>
   )
 }
